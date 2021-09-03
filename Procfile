@@ -1,1 +1,1 @@
-web: java -jar C:/Users/user/Desktop/udemy/MyFirstApplication/target/MyFirstApplication-0.0.1-SNAPSHOT.jar
+web: java -jar target/MyFirstApplication-0.0.1-SNAPSHOT.jar
