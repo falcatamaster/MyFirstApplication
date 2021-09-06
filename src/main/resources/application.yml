@@ -6,8 +6,7 @@ spring:
 #    password:
 #  h2.console.enabled: true
   datasource:
-    url: jdbc:postgresql://ec2-107-20-24-247.compute-1.amazonaws.com:5432/d317c71nlnehi1
-    username: zhsalsmwvmfsbp
-    password: e3d4f3b5ed1184c49e3e1f128f776ae0c5241a1daf2857936201b358bd820e56
     driverClassName: org.postgresql.Driver
- 
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
