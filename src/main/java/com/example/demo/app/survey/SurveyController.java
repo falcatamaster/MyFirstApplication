@@ -61,7 +61,7 @@ public class SurveyController {
 			return "survey/form_boot";
 		}
 		model.addAttribute("title", "Confirm Page");
-		return "survey/confirm";
+		return "survey/confirm_boot";
 	}
 	
 	@PostMapping("/complete")
@@ -82,6 +82,6 @@ public class SurveyController {
 		
 		surveyService.save(survey);
 		redirectAttributes.addFlashAttribute("complete", "Thanks!");
-		return "redirect:/survey/form_boot";
+		return "redirect:/survey/form";
 	}
 }

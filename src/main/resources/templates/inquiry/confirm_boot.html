@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="utf-8">
@@ -6,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title th:text="${title}">Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
@@ -22,7 +23,7 @@
 
       <div class="starter-template">
         <h1 th:text="${title}">Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <p class="lead">入力内容をご確認ください</p>
       </div>
 
 <div th:object="${inquiryForm}">
